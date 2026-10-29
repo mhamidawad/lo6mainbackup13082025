@@ -3,8 +3,8 @@
   "version": "0.2.0",
   "private": true,
   "scripts": {
-    "dev": "yarn tinacms dev -c \"next dev\"",
-    "build": "yarn tinacms build && next build && next-sitemap",
+    "dev": "tinacms dev -c \"next dev\"",
+    "build": "tinacms build --skip-cloud-checks && next build && next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -38,8 +38,6 @@
     "@types/react": "18.3.1",
     "@types/react-dom": "18.3.1",
     "@types/recharts": "^1.8.29",
-    "@udecode/plate": "^46.0.4",
-    "@udecode/plate-table": "^41.0.0",
     "@vweevers/length-prefixed-stream": "^1.0.0",
     "autoprefixer": "10.4.20",
     "axios": "^1.7.9",
@@ -73,8 +71,6 @@
     "remark": "^15.0.1",
     "remark-gfm": "^4.0.0",
     "remark-html": "^16.0.1",
-    "slate": "^0.121.0",
-    "slate-react": "^0.121.0",
     "slugify": "^1.6.6",
     "sonner": "^1.7.1",
     "tailwind-merge": "^2.5.2",
